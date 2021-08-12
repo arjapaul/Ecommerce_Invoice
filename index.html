@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <title>Invoice</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-5">Ecommerce Invoice</h1>
+  </div>
+
+  <div class="container mt-5 text-center">
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col"></th>
+          <th scope="col">PRODUCT</th>
+          <th scope="col">PRICE</th>
+          <th scope="col">QUANTITY</th>
+          <th scope="col">SUBTOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td class="w-25">
+            <img src="https://e7.pngegg.com/pngimages/420/432/png-clipart-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle.png?fbclid=IwAR1rWKbvJxNrQQwRbNRFCpeFAA-sne1Tkm60s0lePqYRY8ll0oVm9Zh-s7I" class="img-fluid img-thumbnail " style="max-width: 50%;"alt="Sheep">
+          </td>
+          <td>Spotify Subscription</td>
+          <td>&#2547; 200</td>
+          <td>1</td>
+          <td>&#2547; 200</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td class="w-25">
+            <img src="https://i.pinimg.com/originals/1b/54/ef/1b54efef3720f6ac39647fc420d4a6f9.png" class="img-fluid img-thumbnail " style="max-width: 50%;"alt="Sheep">
+          </td>
+          <td>Netflix Subscription</td>
+          <td>&#2547; 300</td>
+          <td>1</td>
+          <td>&#2547; 300</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td class="w-25">
+            <img src="data:image/png;base64,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" class="img-fluid img-thumbnail " style="max-width: 50%;"alt="Sheep">
+          </td>
+          <td>Hoichoi Subscription</td>
+          <td>&#2547; 150</td>
+          <td>1</td>
+          <td>&#2547; 150</td>
+        </tr>
+
+        <tr>
+          <td colspan="4">
+            <form class="row g-3">
+              <div class="col-auto">
+                <label for="Coupon code" class="visually-hidden">Coupon code</label>
+                <input type="text" class="form-control" id="CouponCode" placeholder="Coupon code">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-success ">Apply Coupon</button>
+              </div>
+
+            </td>
+            <td colspan="2">
+              <div class="col ">
+                <button type="submit" class="btn btn-primary ">UPDATE CART</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container mt-5 ml-19 text-center">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">CART TOTAL</th>
+            <th scope="col">Amount</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SUBTOTAL</th>
+            <th scope="row">&#2547; 650</th>
+          </tr>
+          <tr>
+            <th scope="row">50% discount applied</th>
+            <th scope="row">&#2547; 325</th>
+          </tr>
+          <tr>
+            <th scope="row">Total</th>
+            <th scope="row">&#2547; 325</th>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </html>
